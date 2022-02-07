@@ -100,3 +100,15 @@ function calcularPerimetroTriangulo() {
 function calcularAreaTriangulo() {
 
 }
+function calcularPerimetroCirculo() {
+    const inputCirculo = document.getElementById("input-circulo");
+    const valueInputCirculo = inputCirculo.value;
+    const perimetroDelCirculo = perimetroCirculo(valueInputCirculo);
+    alert(perimetroDelCirculo);
+}
+function calcularAreaCirculo() {
+    const inputCirculo = document.getElementById("input-circulo");
+    const valueInputCirculo = inputCirculo.value;
+    const areaDelCirculo = areaCirculo(valueInputCirculo);
+    alert(areaDelCirculo);
+}

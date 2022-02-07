@@ -16,7 +16,7 @@
     place-items: center;
     text-align: center;
 }
-.circle {
+.cuadrado {
     margin: 0 auto;
     margin-bottom: 12px;
     width: 50px;
@@ -31,7 +31,7 @@
     width: 350px;
     border: solid salmon 5px;
     border-radius: 20px;
-    height: 300px;
+    height: 350px;
 }
 .container-cuadrado h2 {
     margin-bottom: 12px;
@@ -66,7 +66,7 @@
     width: 350px;
     border: solid salmon 5px;
     border-radius: 20px;
-    height: 400px;
+    height: 450px;
 }
 .triangulo {
     margin: 0 auto;
@@ -77,7 +77,7 @@
     border-bottom: 100px solid purple;
     border-left: 50px solid transparent; 
 }
-.container-triangulo h2 {
+.container-triangulo h2, .container-circulo h2 {
     margin-bottom: 12px;
 }
 .container-labels-input-triangulo {
@@ -93,3 +93,68 @@
     border-radius: 20px;
     border: solid purple 2px;
 }
+.container-circulo {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8px;
+    width: 350px;
+    border: solid salmon 5px;
+    border-radius: 20px;
+    height: 350px;
+}
+.circle {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    width: 50px;
+    height: 50px;
+    border: solid purple 2px;
+    border-radius: 50%;
+}
+.label-circulo {
+    font-weight: bold;
+}
+.input-circulo {
+    border-radius: 20px;
+    margin-top: 12px;
+    background-color: transparent;
+}
+@media (min-width: 900px) {
+    .section {
+        display: grid;
+        place-items: center;
+        gap: 5px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-cuadrado {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .container-circulo {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        margin-top: 0;
+    }
+    .container-triangulo {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+}
+@media (min-width: 1024px) {
+    .section {
+       display: flex;
+       justify-content: space-around;
+    }
+    .container-cuadrado {
+        
+    }
+    .container-circulo {
+        
+    }
+    .container-triangulo {
+        
+    }
+}
+
